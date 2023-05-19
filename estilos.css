@@ -12,12 +12,22 @@ body{
 .titulo-form{
     font-family: 'Orbitron', sans-serif;
     padding-bottom: 10px;
+    font-size: 26px;
     text-shadow: 5px 3px 2px rgba(0,0,0,0.41);
 }
 /*form label*/
 .form-label{
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 1px;
+}
+/*Iconos label*/
+.fa-ruler{
+    font-size: 20px;
+    margin-left: 7px;
+}
+.fa-weight-hanging{
+    font-size: 20px;
+    margin-left: 7px;
 }
 /*imagen*/
 #img{
@@ -46,7 +56,7 @@ body{
 }
 /*mas-info*/
 .more-inf{
-    margin-top: 30px;
+    margin-top: 10px;
     border-top: 1px solid lightgray;
     list-style-type: none;
     padding: 12px;
@@ -58,6 +68,7 @@ body{
 
 /*formulario*/
 .formulario{
+    background-image: linear-gradient(to left top, #212224, #3c3f41, #5b5f5f, #7c807e, #a1a29f);
    height: 100%;
    border-radius: 5px;
    -webkit-box-shadow: 13px -1px 228px -57px rgba(255,255,255,1);
@@ -66,6 +77,9 @@ body{
    opacity: 0;
    transform: translateX(-40px);
    transition: 1000ms ease-in;
+}
+.form-label{
+    font-weight: 650;
 }
 /*formulario active*/
 .formulario.active{
@@ -78,6 +92,11 @@ body{
 }
 .btn{
     width: 100%;
+    transition: 600ms ease;
+}
+.btn:hover{
+    transition: 600ms ease;
+    letter-spacing: 2px;
 }
 .pintar{
     width: 100%;
@@ -89,7 +108,8 @@ body{
     
 }
 .imc-res{
-    color: green;
+    color: rgb(21, 189, 21);
+     text-shadow: 5px 3px 2px rgba(0,0,0,0.10);
     margin-top: 30px;
     font-family: 'Orbitron', sans-serif;
     font-weight: 900;
@@ -115,12 +135,18 @@ body{
     padding: 10px;
     margin-top: 20px;
 }
-
-
+.linkk{
+    transition: 600ms;
+}
+.linkk:hover{
+    transition: 600ms;
+    letter-spacing: 1px;
+}
 
 /*ocultar imagen*/
-@media screen and (max-width: 769px){
+@media screen and (max-width: 995px){
       .prin-img{
          display: none;
       }
 }
+

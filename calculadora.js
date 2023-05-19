@@ -101,3 +101,20 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
 
 
+/*VALIDAR INPUT*/
+//Altura
+var inputAltura = document.getElementById("altura");
+inputAltura.addEventListener("input", function() {
+  var value = this.value;
+  value = value.replace(/[^0-9.]/g, ""); // Remover todos los caracteres excepto números y el punto decimal
+  value = value.replace(/(\..*)\./g, "$1"); // Remover múltiples puntos decimales
+  this.value = value;
+});
+
+//Peso
+var inputPeso = document.getElementById("peso");
+inputPeso.addEventListener("input", function() {
+  var valuee = this.value;
+  valuee = valuee.replace(/[^0-9]/g, ""); // Remover todos los caracteres que no sean números
+  this.value = valuee;
+});
