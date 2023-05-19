@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Orbitron&family=Roboto+Flex:opsz@8..144&display=swap');
+body{
+    min-height: 100%;
+    background-color: #1a1a1a;
+    overflow-x: hidden;
+    background-image: url("img/degradado.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+/*titulo*/
+.titulo-form{
+    font-family: 'Orbitron', sans-serif;
+    padding-bottom: 10px;
+    text-shadow: 5px 3px 2px rgba(0,0,0,0.41);
+}
+/*form label*/
+.form-label{
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+}
+/*imagen*/
+#img{
+    user-select: none;
+    width:100% ;
+    object-fit: cover;
+    border-radius: 3px solid red;
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: 1000ms ease-in-out;
+}
+/*img active*/
+#img.active{
+    transform: translateX(0);
+    transition: 1000ms ease-in;
+    opacity: 1;
+}
+.row{
+    height: 100%;
+    padding: 20px;
+    /*background-color: orange;*/
+    /*border: 2px solid #000;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*mas-info*/
+.more-inf{
+    margin-top: 30px;
+    border-top: 1px solid lightgray;
+    list-style-type: none;
+    padding: 12px;
+}
+.more-inf i{
+    margin-left: 5px;
+    font-size: 17px;
+}
+
+/*formulario*/
+.formulario{
+   height: 100%;
+   border-radius: 5px;
+   -webkit-box-shadow: 13px -1px 228px -57px rgba(255,255,255,1);
+   -moz-box-shadow: 13px -1px 228px -57px rgba(255,255,255,1);
+   box-shadow: 13px -1px 228px -57px rgba(255,255,255,1);
+   opacity: 0;
+   transform: translateX(-40px);
+   transition: 1000ms ease-in;
+}
+/*formulario active*/
+.formulario.active{
+    transition: 1000ms ease-in;
+    opacity: 5;
+    transform: translateX(0);
+}
+.form-control{
+    width: 100%;
+}
+.btn{
+    width: 100%;
+}
+.pintar{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.imc-res{
+    color: green;
+    margin-top: 30px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+}
+.btn-danger{
+    margin-top: 30px;
+    border: none;
+    background-color: rgb(120, 40, 40); 
+    border-radius: 50%;
+    transition: 400ms ease;
+}
+.btn-danger:hover{
+    transition: 400ms ease;
+   border-radius: 0;
+   background-color: rgb(160, 22, 22);
+}
+.icon{
+    font-size: 25px;
+    color: #fff;
+   
+}
+.pintar .card{
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+
+/*ocultar imagen*/
+@media screen and (max-width: 769px){
+      .prin-img{
+         display: none;
+      }
+}
