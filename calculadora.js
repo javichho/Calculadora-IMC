@@ -27,7 +27,7 @@ function calcular(altura,peso){
     if(altura && peso){
         //Get (imc)
         let imc = peso / (altura * altura);
-        const imcRedondeado = imc.toFixed(4);
+        const imcRedondeado = imc.toFixed(4) * 1000;
         //PINTAMOS
         pintarImc(imcRedondeado)
     }
